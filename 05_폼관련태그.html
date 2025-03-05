@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그</title>
+</head>
+<body>
+    <h2>폼 관련 태그</h2>
+    
+    <form method="post">
+        <fieldset>
+            <legend>화면 기본 정보</legend>
+            <label for="userId">아이디 : </label>
+            <input type="text" id="userId" name="userId"
+            placeholder="아이디를 입력해주세요." autocomplete="off" required autofocus>
+
+            <br><br>
+
+            <label for="userPwd">비밀번호 : </label>
+            <input type="password" id="userPwd" name="userPwd"
+            placeholder="비밀번호를 입력해주세요." autocomplete="off" required>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="회원가입">
+        <input type="reset" value="초기화">
+    </form>
+
+    <h3>input 태그와 type 속성</h3>
+
+    <h4>type="hidden"</h4>
+
+    <form>
+        <label for="hiddenValue">안 보임 : </label>
+        <input type="hidden" name="hiddenValue" id="hiddenValue" value="1234">
+
+        <br><br>
+
+        <input type="submit" value="전송">
+    </form>
+
+    <h4>type="text|passowrd|search|url|email|tel"</h4>
+
+    <form>
+        <label for="id">아이디 : </label>
+        <input type="text" name="id" id="id" value="hong123"
+        size="50" maxlength="8">
+
+        <br><br>
+        
+        <label for="passowrd">비밀번호 : </label>
+        <input type="password" name="passowrd" id="passowrd"
+        size="50" maxlength="10" placeholder="패스워드를 입력해 주세요.">
+
+        <br><br>
+        
+        <label for="">검색 : </label>
+        <input type="search" name="search" id="search"
+        size="50" maxlength="15" placeholder="검색할 내용을 입력해 주세요.">
+
+        <br><br>
+
+        <label for="homepage">홈페이지 : </label>
+        <input type="url" name="homepage" id="homepage">
+
+        <br><br>
+
+        <label for="email">이메일 : </label>
+        <input type="email" name="email" id="email" placeholder="이메일을 입력해 주세요.">
+
+        <br><br>
+
+        <label for="phone">전화번호 : </label>
+        <input type="tel" name="phone" id="phone" placeholder="전화번호를 입력해 주세요.">
+
+        <br><br>
+
+        <input type="submit" value="전송">
+        <input type="reset" value="초기화">
+    </form>
+
+</body>
+</html>
